@@ -40,7 +40,7 @@ export default function ContactSection() {
       name: "Google Scholar",
       description: "Research publications and citations",
       icon: GraduationCap,
-      href: "https://scholar.google.com",
+      href: "https://scholar.google.com/citations?user=NiXjAasAAAAJ&hl=en",
     },
     {
       name: "LinkedIn",
@@ -183,8 +183,8 @@ export default function ContactSection() {
                     </div>
                     <div>
                       <p className="font-medium">Email</p>
-                      <a href="mailto:sarah.chen@csirnpl.org" className="text-academic-blue hover:text-academic-blue/80">
-                        sarah.chen@csirnpl.org
+                      <a href="mailto:vijaykumar.toutam@nplindia.res.in" className="text-academic-blue hover:text-academic-blue/80">
+                        vijaykumar.toutam@nplindia.res.in
                       </a>
                     </div>
                   </div>
@@ -195,8 +195,8 @@ export default function ContactSection() {
                     </div>
                     <div>
                       <p className="font-medium">Phone</p>
-                      <a href="tel:+44-20-8977-3222" className="text-academic-blue hover:text-academic-blue/80">
-                        +44 (0)20 8977 3222
+                      <a href="tel:+91-11-4560-8441" className="text-academic-blue hover:text-academic-blue/80">
+                        +91 (11) 4560 8441
                       </a>
                     </div>
                   </div>
@@ -209,8 +209,8 @@ export default function ContactSection() {
                       <p className="font-medium">Address</p>
                       <p className="text-muted-foreground">
                         CSIR National Physical Laboratory<br />
-                        Hampton Road, Teddington<br />
-                        Middlesex, TW11 0LW, UK
+                        Dr. K.S. Krishnan Marg<br />
+                        New Delhi 110012, India
                       </p>
                     </div>
                   </div>

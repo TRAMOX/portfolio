@@ -25,20 +25,20 @@ export default function HeroSection() {
                 Welcome to my academic portfolio
               </p>
               <h1 className="text-5xl lg:text-7xl font-bold leading-tight" data-testid="main-heading">
-                <span className="gradient-text">Dr. Sarah Chen</span>
+                <span className="gradient-text">Dr. Vijaykumar Toutam</span>
               </h1>
               <h2 className="text-2xl lg:text-3xl font-semibold text-academic-muted" data-testid="position-title">
                 Principal Scientist, CSIR NPL
               </h2>
               <p className="text-xl text-muted-foreground leading-relaxed max-w-2xl" data-testid="specialization">
-                Specializing in Additive Manufacturing, 3D Printed Electronics, Optical Sensors, and Energy Storage
+                Specializing in Additive Manufacturing, 3D Printed Electronics, Optical Sensors, Energy Harvesters, and Nanoelectronics
               </p>
             </div>
 
             {/* Quick Links */}
             <div className="flex flex-wrap gap-4">
               <Button asChild className="bg-academic-blue hover:bg-academic-blue/90" data-testid="button-google-scholar">
-                <a href="https://scholar.google.com" target="_blank" rel="noopener noreferrer">
+                <a href="https://scholar.google.com/citations?user=NiXjAasAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">
                   <GraduationCap className="mr-2 h-4 w-4" />
                   Google Scholar
                 </a>
@@ -71,8 +71,8 @@ export default function HeroSection() {
           <div className="relative flex justify-center lg:justify-end animate-fade-in">
             <div className="relative">
               <img
-                src="https://images.unsplash.com/photo-1582719508461-905c673771fd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&h=500"
-                alt="Dr. Sarah Chen - Professional Portrait"
+                src="https://scholar.googleusercontent.com/citations?view_op=view_photo&user=NiXjAasAAAAJ&citpid=9"
+                alt="Dr. Vijaykumar Toutam - Professional Portrait"
                 className="w-80 h-80 lg:w-96 lg:h-96 rounded-full object-cover shadow-2xl border-8 border-background"
                 data-testid="portrait-image"
               />

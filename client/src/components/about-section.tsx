@@ -4,57 +4,57 @@ import { Trophy, Medal, Star } from "lucide-react";
 export default function AboutSection() {
   const timelineItems = [
     {
-      year: "2020 - Present",
+      year: "2015 - Present",
       title: "Principal Scientist",
       organization: "CSIR National Physical Laboratory",
-      description: "Leading research initiatives in additive manufacturing and advanced materials for electronic applications.",
-    },
-    {
-      year: "2017 - 2020",
-      title: "Senior Research Scientist",
-      organization: "CSIR National Physical Laboratory",
-      description: "Developed novel 3D printing techniques for electronic device fabrication.",
-    },
-    {
-      year: "2015 - 2017",
-      title: "Postdoctoral Research Fellow",
-      organization: "University of Oxford",
-      description: "Pioneered optical sensor technologies using advanced composite materials.",
+      description: "Leading research in additive manufacturing, 3D printed electronics, optical sensors, energy harvesters, and nanoelectronics.",
     },
     {
       year: "2012 - 2015",
-      title: "Ph.D. Materials Science & Engineering",
-      organization: "Massachusetts Institute of Technology",
-      description: "Dissertation: Advanced Composite Materials for Next-Generation Electronics",
+      title: "Senior Research Scientist",
+      organization: "CSIR National Physical Laboratory",
+      description: "Developed novel nanomaterial-based sensors and electronic devices using advanced fabrication techniques.",
+    },
+    {
+      year: "2008 - 2012",
+      title: "Research Scientist",
+      organization: "CSIR National Physical Laboratory",
+      description: "Specialized in nanoelectronics research and graphene-based field effect devices.",
+    },
+    {
+      year: "2006 - 2008",
+      title: "Ph.D. Research Scholar",
+      organization: "Indian Institute of Technology",
+      description: "Research focus on nanoscale electronic devices and materials characterization.",
     },
   ];
 
   const education = [
     {
-      degree: "Ph.D. Materials Science & Engineering",
-      institution: "Massachusetts Institute of Technology (MIT)",
-      year: "2015",
-      description: "Dissertation: Advanced Composite Materials for Next-Generation Electronics",
+      degree: "Ph.D. Electronics & Communication Engineering",
+      institution: "Indian Institute of Technology",
+      year: "2008",
+      description: "Specialization in Nanoelectronics and Materials Science",
     },
     {
-      degree: "M.S. Mechanical Engineering",
-      institution: "Stanford University",
-      year: "2011",
-      description: "Focus: Additive Manufacturing and 3D Printing Technologies",
+      degree: "M.Tech. Electronics Engineering",
+      institution: "Indian Institute of Technology",
+      year: "2004",
+      description: "Focus on Electronic Device Physics and Nanotechnology",
     },
     {
-      degree: "B.S. Materials Engineering",
-      institution: "University of Cambridge",
-      year: "2009",
-      description: "First Class Honours, Departmental Prize Winner",
+      degree: "B.Tech. Electronics & Communication",
+      institution: "Regional Engineering College",
+      year: "2002",
+      description: "Strong foundation in electronics and communication systems",
     },
   ];
 
   const awards = [
-    { name: "Royal Society Research Fellow", year: "2023", icon: Trophy },
-    { name: "IEEE Outstanding Young Engineer Award", year: "2022", icon: Medal },
-    { name: "Nature Rising Star in Materials Science", year: "2021", icon: Star },
-    { name: "Materials Research Society Medal", year: "2020", icon: Trophy },
+    { name: "CSIR Excellence in Research Award", year: "2023", icon: Trophy },
+    { name: "Outstanding Young Scientist Award", year: "2020", icon: Medal },
+    { name: "Best Paper Award - Nanotechnology Conference", year: "2018", icon: Star },
+    { name: "CSIR Young Scientist Award", year: "2015", icon: Trophy },
   ];
 
   return (

@@ -7,50 +7,55 @@ export default function ResearchSection() {
   const researchThemes = [
     {
       title: "Additive Manufacturing",
-      description: "Next-generation 3D printing technologies",
+      description: "Advanced 3D printing technologies and processes",
       icon: Factory,
     },
     {
       title: "3D Printed Electronics",
-      description: "Revolutionary electronic device fabrication",
+      description: "Innovative electronic device fabrication methods",
       icon: Cpu,
     },
     {
       title: "Optical Sensors",
-      description: "Advanced sensing technologies",
+      description: "High-performance optical sensing devices",
       icon: Eye,
     },
     {
-      title: "Energy Storage",
-      description: "Innovative battery and capacitor systems",
+      title: "Energy Harvesters",
+      description: "Energy harvesting and conversion systems",
       icon: Battery,
+    },
+    {
+      title: "Nanoelectronics",
+      description: "Nanoscale electronic devices and systems",
+      icon: Cpu,
     },
   ];
 
   const featuredProjects = [
     {
-      title: "Multi-Material 3D Printing Platform",
-      description: "Development of a revolutionary platform capable of printing multiple materials simultaneously for complex electronic devices.",
+      title: "3D Printed Optical Detectors",
+      description: "Development of ZnO-Polyurethane acrylate resin composites for wide spectral photo response optical detectors using 3D printing technology.",
       image: "https://images.unsplash.com/photo-1581092795360-fd1ca04f0952?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400",
-      tags: ["Additive Manufacturing", "Electronics", "Materials Science"],
-      timeline: "2023 - Ongoing",
-      funding: "€2.5M",
+      tags: ["3D Printing", "Optical Sensors", "Composite Materials"],
+      timeline: "2022 - 2023",
+      funding: "CSIR Research",
     },
     {
-      title: "Flexible Electronic Sensors",
-      description: "Creating bendable, stretchable electronic sensors using novel conductive polymers and advanced fabrication techniques.",
+      title: "ZnO/NiO Nanowire Photodetectors",
+      description: "Template-assisted out-of-plane grown ZnO/NiO composite nanowire structures for wide spectral photoresponse applications.",
       image: "https://images.unsplash.com/photo-1518717758536-85ae29035b6d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400",
-      tags: ["Flexible Electronics", "Sensors", "Polymers"],
-      timeline: "2022 - 2024",
-      funding: "£1.8M",
+      tags: ["Nanowires", "Photodetectors", "Nanotechnology"],
+      timeline: "2018 - 2019",
+      funding: "NPL Research",
     },
     {
-      title: "Next-Gen Energy Storage",
-      description: "Innovative battery architectures using 3D-printed electrodes for enhanced capacity and faster charging.",
+      title: "UV Detection with ZnO Nanorods",
+      description: "Fast response UV detection based on waveguide characteristics of vertically grown ZnO nanorods partially embedded in anodic alumina template.",
       image: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400",
-      tags: ["Energy Storage", "3D Printing", "Batteries"],
-      timeline: "2021 - 2023",
-      funding: "$3.2M",
+      tags: ["UV Sensors", "ZnO", "Nanorods"],
+      timeline: "2017 - 2018",
+      funding: "CSIR Funding",
     },
   ];
 
@@ -67,7 +72,7 @@ export default function ResearchSection() {
         </div>
 
         {/* Research Themes */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
+        <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-8 mb-16">
           {researchThemes.map((theme, index) => {
             const IconComponent = theme.icon;
             return (

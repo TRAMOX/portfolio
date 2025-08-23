@@ -32,7 +32,7 @@ export default function Navigation() {
         <div className="flex justify-between items-center py-4">
           {/* Logo */}
           <div className="text-2xl font-bold gradient-text">
-            Dr. Sarah Chen
+            Dr. Vijaykumar Toutam
           </div>
 
           {/* Desktop Navigation */}

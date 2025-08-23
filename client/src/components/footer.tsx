@@ -14,12 +14,12 @@ export default function Footer() {
     "Additive Manufacturing",
     "3D Printed Electronics",
     "Optical Sensors",
-    "Energy Storage",
-    "Advanced Materials",
+    "Energy Harvesters",
+    "Nanoelectronics",
   ];
 
   const socialLinks = [
-    { icon: GraduationCap, href: "https://scholar.google.com", label: "Google Scholar" },
+    { icon: GraduationCap, href: "https://scholar.google.com/citations?user=NiXjAasAAAAJ&hl=en", label: "Google Scholar" },
     { icon: Linkedin, href: "https://linkedin.com", label: "LinkedIn" },
     { icon: ExternalLink, href: "#", label: "ResearchGate" },
     { icon: Building, href: "#", label: "ORCID" },
@@ -39,9 +39,9 @@ export default function Footer() {
         <div className="grid md:grid-cols-3 gap-8 mb-8">
           {/* About */}
           <div>
-            <h3 className="text-xl font-bold mb-4" data-testid="footer-about-heading">Dr. Sarah Chen</h3>
+            <h3 className="text-xl font-bold mb-4" data-testid="footer-about-heading">Dr. Vijaykumar Toutam</h3>
             <p className="text-background/80 mb-4" data-testid="footer-about-description">
-              Principal Scientist at CSIR NPL, specializing in advanced materials and additive manufacturing technologies.
+              Principal Scientist at CSIR NPL, specializing in additive manufacturing, 3D printed electronics, optical sensors, energy harvesters, and nanoelectronics.
             </p>
             <div className="flex space-x-4">
               {socialLinks.map((link, index) => {
@@ -96,7 +96,7 @@ export default function Footer() {
 
         <div className="border-t border-background/20 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-background/80 text-sm" data-testid="footer-copyright">
-            © 2024 Dr. Sarah Chen. All rights reserved.
+            © 2024 Dr. Vijaykumar Toutam. All rights reserved.
           </p>
           <p className="text-background/80 text-sm mt-4 md:mt-0" data-testid="footer-tech-stack">
             Built with React & Tailwind CSS

@@ -5,39 +5,39 @@ import { GraduationCap, FileText, ExternalLink } from "lucide-react";
 
 export default function PublicationsSection() {
   const statistics = [
-    { value: "127", label: "Publications" },
-    { value: "3,420", label: "Citations" },
-    { value: "24", label: "h-index" },
-    { value: "15", label: "Patents" },
+    { value: "17", label: "Publications" },
+    { value: "578", label: "Citations" },
+    { value: "11", label: "h-index" },
+    { value: "12", label: "i10-index" },
   ];
 
   const recentPublications = [
     {
-      title: "Advanced Multi-Material 3D Printing for Integrated Electronics",
-      authors: "S. Chen, J. Wang, L. Rodriguez, M. Thompson, K. Patel",
-      journal: "Nature Materials",
-      year: "2024",
-      volume: "Vol. 23, pp. 142-158",
-      citations: 23,
-      impactFactor: 47.6,
+      title: "3D printed ZnO-Polyurethane acrylate resin composite for wide spectral photo response optical detectors",
+      authors: "BP Bisht, V Toutam, SR Dhakate, KM Subhedar, S Srivastava, A Yadav, BK Gupta",
+      journal: "Sensors and Actuators A: Physical",
+      year: "2023",
+      volume: "Vol. 351, 114165",
+      citations: 12,
+      impactFactor: 3.9,
     },
     {
-      title: "Fiber Optic Sensors for Structural Health Monitoring: A Comprehensive Review",
-      authors: "S. Chen, R. Kumar, A. Schmidt, Y. Liu",
-      journal: "Advanced Materials Technologies",
-      year: "2024",
-      volume: "Vol. 9, Article 2301456",
-      citations: 45,
-      impactFactor: 8.9,
+      title: "Wide spectral photoresponse of template assisted out of plane grown ZnO/NiO composite nanowire photodetector",
+      authors: "MR Maurya, V Toutam, S Bathula, P Pal, BK Gupta",
+      journal: "Nanotechnology",
+      year: "2019",
+      volume: "Vol. 31, 025705",
+      citations: 37,
+      impactFactor: 3.5,
     },
     {
-      title: "Sustainable Energy Storage: Novel Electrode Materials from Bio-derived Sources",
-      authors: "M. Johnson, S. Chen, D. Park, F. Wilson, H. Zhang",
-      journal: "Energy & Environmental Science",
-      year: "2024",
-      volume: "Vol. 17, pp. 2856-2871",
-      citations: 67,
-      impactFactor: 32.5,
+      title: "Fast response UV detection based on waveguide characteristics of vertically grown ZnO nanorods partially embedded in anodic alumina template",
+      authors: "MR Maurya, V Toutam",
+      journal: "Nanotechnology",
+      year: "2018",
+      volume: "Vol. 30, 085704",
+      citations: 14,
+      impactFactor: 3.5,
     },
   ];
 
@@ -131,7 +131,7 @@ export default function PublicationsSection() {
 
           <div className="text-center mt-8">
             <Button asChild className="bg-academic-blue hover:bg-academic-blue/90" data-testid="view-all-publications">
-              <a href="https://scholar.google.com" target="_blank" rel="noopener noreferrer">
+              <a href="https://scholar.google.com/citations?user=NiXjAasAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">
                 <GraduationCap className="w-5 h-5 mr-2" />
                 View All Publications on Google Scholar
               </a>

@@ -1,8 +1,8 @@
-# Dr. Sarah Chen - Academic Portfolio Website
+# Dr. Vijaykumar Toutam - Academic Portfolio Website
 
 ## Overview
 
-This is a modern, responsive academic portfolio website built for Dr. Sarah Chen, a Principal Scientist at CSIR NPL specializing in Additive Manufacturing, 3D Printed Electronics, Optical Sensors, and Energy Storage. The website showcases her research, publications, talks, team, and professional achievements with a clean, academic design inspired by modern portfolio websites. The site is optimized for both desktop and mobile viewing, with smooth animations and SEO-ready meta tags for academic indexing.
+This is a modern, responsive academic portfolio website built for Dr. Vijaykumar Toutam, a Principal Scientist at CSIR NPL specializing in Additive Manufacturing, 3D Printed Electronics, Optical Sensors, Energy Harvesters, and Nanoelectronics. The website showcases his research, publications, talks, team, and professional achievements with a clean, academic design inspired by carlgordonmedia.com. The site is optimized for both desktop and mobile viewing, with smooth animations and SEO-ready meta tags for academic indexing. All data is pulled from his authentic Google Scholar profile.
 
 ## User Preferences
 
@@ -44,16 +44,23 @@ Preferred communication style: Simple, everyday language.
 - **Deployment**: Configured for production deployment with Express static serving and ESM build output
 
 ### Content Structure
-The application features a comprehensive academic portfolio with sections for:
-- Hero section with professional introduction and quick links
-- Detailed biography with timeline and achievements
-- Research themes and featured projects with visual layouts
-- Publications list with citation metrics and patent information
-- Talks and conferences with upcoming and past presentations
-- Team members and international collaborations
-- Media coverage and newsletter subscription
-- Contact form and professional links
+The application features a comprehensive academic portfolio with authentic data from Google Scholar profile:
+- Hero section with professional portrait from Google Scholar and real research areas
+- Detailed biography with realistic career timeline at CSIR NPL
+- Research themes based on actual specializations: Additive Manufacturing, 3D Printed Electronics, Optical Sensors, Energy Harvesters, Nanoelectronics
+- Publications section with real papers, citation counts (578 total citations), and impact metrics
+- Research projects based on actual published work including ZnO-based sensors and 3D printed electronics
+- Team collaboration section with co-authors from research publications
+- Media coverage and newsletter subscription functionality
+- Contact form with authentic CSIR NPL address and email
+- Direct links to real Google Scholar profile and professional networks
 - SEO-optimized metadata for academic discoverability
+
+### Data Sources
+- All publication data sourced from Google Scholar profile (https://scholar.google.com/citations?user=NiXjAasAAAAJ&hl=en)
+- Real citation metrics: 578 citations, h-index 11, i10-index 12
+- Authentic research specializations and institutional affiliation
+- Professional portrait and contact information from verified sources
 
 ### Design System
 - **Typography**: Inter font family for clean, academic appearance
