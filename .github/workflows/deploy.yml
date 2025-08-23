@@ -28,7 +28,7 @@ jobs:
           
       - name: Install dependencies
         run: |
-          npm ci
+          npm install --legacy-peer-deps
           cd client && npm install --legacy-peer-deps
         
       - name: Build
@@ -40,7 +40,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./dist
+          path: ./client/dist
 
   deploy:
     environment:
