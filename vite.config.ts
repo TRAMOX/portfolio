@@ -7,12 +7,11 @@ export default defineConfig({
   base: "/xrtmvi/",
   resolve: {
     alias: {
-      "@": path.resolve("./client/src"),
+      "@": path.resolve("./src"),
     },
   },
-  root: "./client",
   build: {
-    outDir: "../dist",
+    outDir: "./dist",
     emptyOutDir: true,
   },
 });
