@@ -46,19 +46,19 @@ export default function ContactSection() {
       name: "LinkedIn",
       description: "Professional networking and updates",
       icon: Linkedin,
-      href: "https://linkedin.com",
+      href: "https://in.linkedin.com/in/vijaytoutam",
     },
     {
       name: "ORCID",
       description: "Research identifier and works",
       icon: ExternalLink,
-      href: "#",
+      href: "https://orcid.org/0000-0001-5415-2745",
     },
     {
       name: "ResearchGate",
       description: "Academic research network",
       icon: Building,
-      href: "#",
+      href: "https://www.researchgate.net/profile/Vijaykumar-Toutam",
     },
   ];
 
@@ -177,37 +177,37 @@ export default function ContactSection() {
               <CardContent className="p-8">
                 <h3 className="text-2xl font-semibold mb-6" data-testid="direct-contact-heading">Direct Contact</h3>
                 <div className="space-y-4">
-                  <div className="flex items-center space-x-4" data-testid="contact-email">
-                    <div className="w-10 h-10 bg-academic-blue rounded-full flex items-center justify-center">
-                      <Mail className="w-5 h-5 text-white" />
+                  <div className="flex items-center space-x-4 p-3 rounded-lg hover:bg-academic-blue/5 transition-all duration-300 cursor-pointer group" data-testid="contact-email">
+                    <div className="w-10 h-10 bg-academic-blue rounded-full flex items-center justify-center group-hover:scale-110 group-hover:shadow-lg transition-all duration-300">
+                      <Mail className="w-5 h-5 text-white group-hover:scale-110 transition-transform duration-300" />
                     </div>
                     <div>
-                      <p className="font-medium">Email</p>
-                      <a href="mailto:vijaykumar.toutam@nplindia.res.in" className="text-academic-blue hover:text-academic-blue/80">
+                      <p className="font-medium group-hover:text-academic-blue transition-colors duration-300">Email</p>
+                      <a href="mailto:vijaykumar.toutam@nplindia.res.in" className="text-academic-blue hover:text-academic-blue/80 group-hover:scale-105 transition-transform duration-300 inline-block">
                         vijaykumar.toutam@nplindia.res.in
                       </a>
                     </div>
                   </div>
 
-                  <div className="flex items-center space-x-4" data-testid="contact-phone">
-                    <div className="w-10 h-10 bg-academic-blue rounded-full flex items-center justify-center">
-                      <Phone className="w-5 h-5 text-white" />
+                  <div className="flex items-center space-x-4 p-3 rounded-lg hover:bg-academic-blue/5 transition-all duration-300 cursor-pointer group" data-testid="contact-phone">
+                    <div className="w-10 h-10 bg-academic-blue rounded-full flex items-center justify-center group-hover:scale-110 group-hover:shadow-lg transition-all duration-300">
+                      <Phone className="w-5 h-5 text-white group-hover:scale-110 transition-transform duration-300" />
                     </div>
                     <div>
-                      <p className="font-medium">Phone</p>
-                      <a href="tel:+91-11-4560-8441" className="text-academic-blue hover:text-academic-blue/80">
+                      <p className="font-medium group-hover:text-academic-blue transition-colors duration-300">Phone</p>
+                      <a href="tel:+91-11-4560-8441" className="text-academic-blue hover:text-academic-blue/80 group-hover:scale-105 transition-transform duration-300 inline-block">
                         +91 (11) 4560 8441
                       </a>
                     </div>
                   </div>
 
-                  <div className="flex items-center space-x-4" data-testid="contact-address">
-                    <div className="w-10 h-10 bg-academic-blue rounded-full flex items-center justify-center">
-                      <MapPin className="w-5 h-5 text-white" />
+                  <div className="flex items-center space-x-4 p-3 rounded-lg hover:bg-academic-blue/5 transition-all duration-300 cursor-pointer group" data-testid="contact-address">
+                    <div className="w-10 h-10 bg-academic-blue rounded-full flex items-center justify-center group-hover:scale-110 group-hover:shadow-lg transition-all duration-300">
+                      <MapPin className="w-5 h-5 text-white group-hover:scale-110 transition-transform duration-300" />
                     </div>
                     <div>
-                      <p className="font-medium">Address</p>
-                      <p className="text-muted-foreground">
+                      <p className="font-medium group-hover:text-academic-blue transition-colors duration-300">Address</p>
+                      <p className="text-muted-foreground group-hover:text-foreground transition-colors duration-300">
                         CSIR National Physical Laboratory<br />
                         Dr. K.S. Krishnan Marg<br />
                         New Delhi 110012, India
@@ -231,17 +231,17 @@ export default function ContactSection() {
                         href={link.href}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="flex items-center space-x-4 p-4 border border-border rounded-lg hover:bg-accent transition-colors duration-200 group"
+                        className="flex items-center space-x-4 p-4 border border-border rounded-lg hover:bg-academic-blue/5 hover:border-academic-blue/20 hover:shadow-lg transition-all duration-300 group cursor-pointer"
                         data-testid={`professional-link-${index}`}
                       >
-                        <div className="w-10 h-10 bg-academic-blue/10 rounded-full flex items-center justify-center">
-                          <IconComponent className="w-5 h-5 text-academic-blue" />
+                        <div className="w-10 h-10 bg-academic-blue/10 rounded-full flex items-center justify-center group-hover:bg-academic-blue/20 group-hover:scale-110 transition-all duration-300">
+                          <IconComponent className="w-5 h-5 text-academic-blue group-hover:scale-125 group-hover:drop-shadow-lg transition-all duration-300" />
                         </div>
                         <div className="flex-1">
-                          <p className="font-medium">{link.name}</p>
-                          <p className="text-sm text-muted-foreground">{link.description}</p>
+                          <p className="font-medium group-hover:text-academic-blue transition-colors duration-300">{link.name}</p>
+                          <p className="text-sm text-muted-foreground group-hover:text-foreground transition-colors duration-300">{link.description}</p>
                         </div>
-                        <ExternalLink className="w-5 h-5 text-muted-foreground group-hover:text-academic-blue transition-colors" />
+                        <ExternalLink className="w-5 h-5 text-muted-foreground group-hover:text-academic-blue group-hover:scale-110 transition-all duration-300" />
                       </a>
                     );
                   })}

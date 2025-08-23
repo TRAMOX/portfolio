@@ -36,7 +36,7 @@ export default function ResearchSection() {
     {
       title: "3D Printed Optical Detectors",
       description: "Development of ZnO-Polyurethane acrylate resin composites for wide spectral photo response optical detectors using 3D printing technology.",
-      image: "https://images.unsplash.com/photo-1581092795360-fd1ca04f0952?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400",
+      image: "",
       tags: ["3D Printing", "Optical Sensors", "Composite Materials"],
       timeline: "2022 - 2023",
       funding: "CSIR Research",
@@ -44,7 +44,7 @@ export default function ResearchSection() {
     {
       title: "ZnO/NiO Nanowire Photodetectors",
       description: "Template-assisted out-of-plane grown ZnO/NiO composite nanowire structures for wide spectral photoresponse applications.",
-      image: "https://images.unsplash.com/photo-1518717758536-85ae29035b6d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400",
+      image: "",
       tags: ["Nanowires", "Photodetectors", "Nanotechnology"],
       timeline: "2018 - 2019",
       funding: "NPL Research",
@@ -52,7 +52,7 @@ export default function ResearchSection() {
     {
       title: "UV Detection with ZnO Nanorods",
       description: "Fast response UV detection based on waveguide characteristics of vertically grown ZnO nanorods partially embedded in anodic alumina template.",
-      image: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400",
+      image: "",
       tags: ["UV Sensors", "ZnO", "Nanorods"],
       timeline: "2017 - 2018",
       funding: "CSIR Funding",
@@ -76,11 +76,11 @@ export default function ResearchSection() {
           {researchThemes.map((theme, index) => {
             const IconComponent = theme.icon;
             return (
-              <Card key={index} className="text-center card-hover" data-testid={`research-theme-${index}`}>
-                <CardContent className="p-6">
-                  <IconComponent className="w-12 h-12 text-academic-blue mx-auto mb-4" />
-                  <h3 className="font-semibold text-lg mb-2">{theme.title}</h3>
-                  <p className="text-sm text-muted-foreground">{theme.description}</p>
+              <Card key={index} className="text-center card-hover group overflow-hidden cursor-pointer" data-testid={`research-theme-${index}`}>
+                <CardContent className="p-6 transition-all duration-300 group-hover:scale-110 group-hover:bg-academic-blue/5">
+                  <IconComponent className="w-12 h-12 text-academic-blue mx-auto mb-4 transition-all duration-300 group-hover:scale-125 group-hover:text-academic-blue group-hover:drop-shadow-lg" />
+                  <h3 className="font-semibold text-lg mb-2 transition-all duration-300 group-hover:text-academic-blue">{theme.title}</h3>
+                  <p className="text-sm text-muted-foreground transition-all duration-300 group-hover:text-foreground">{theme.description}</p>
                 </CardContent>
               </Card>
             );
@@ -90,32 +90,46 @@ export default function ResearchSection() {
         {/* Featured Projects */}
         <div className="grid lg:grid-cols-3 gap-8">
           {featuredProjects.map((project, index) => (
-            <Card key={index} className="overflow-hidden card-hover" data-testid={`project-${index}`}>
-              <img
-                src={project.image}
-                alt={project.title}
-                className="w-full h-48 object-cover"
-                data-testid={`project-image-${index}`}
-              />
-              <CardContent className="p-6">
-                <h3 className="font-bold text-xl mb-3" data-testid={`project-title-${index}`}>
+            <Card key={index} className="overflow-hidden card-hover group cursor-pointer" data-testid={`project-${index}`}>
+              <div className="relative overflow-hidden">
+                {project.image ? (
+                  <img
+                    src={project.image}
+                    alt={project.title}
+                    className="w-full h-48 object-cover transition-all duration-500 group-hover:scale-110 group-hover:brightness-110"
+                    data-testid={`project-image-${index}`}
+                  />
+                ) : (
+                  <div className="w-full h-48 bg-gradient-to-br from-academic-blue/10 to-purple-500/10 flex items-center justify-center transition-all duration-500 group-hover:scale-110 group-hover:from-academic-blue/20 group-hover:to-purple-500/20">
+                    <div className="text-center">
+                      <div className="w-16 h-16 bg-academic-blue/20 rounded-full flex items-center justify-center mx-auto mb-2 transition-all duration-300 group-hover:scale-125 group-hover:bg-academic-blue/30">
+                        <Cpu className="w-8 h-8 text-academic-blue" />
+                      </div>
+                      <p className="text-sm text-muted-foreground">Research Project</p>
+                    </div>
+                  </div>
+                )}
+                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-all duration-300"></div>
+              </div>
+              <CardContent className="p-6 transition-all duration-300 group-hover:bg-academic-blue/5">
+                <h3 className="font-bold text-xl mb-3 transition-all duration-300 group-hover:text-academic-blue" data-testid={`project-title-${index}`}>
                   {project.title}
                 </h3>
-                <p className="text-muted-foreground mb-4" data-testid={`project-description-${index}`}>
+                <p className="text-muted-foreground mb-4 transition-all duration-300 group-hover:text-foreground" data-testid={`project-description-${index}`}>
                   {project.description}
                 </p>
                 <div className="flex flex-wrap gap-2 mb-4">
                   {project.tags.map((tag, tagIndex) => (
-                    <Badge key={tagIndex} variant="secondary" data-testid={`project-tag-${index}-${tagIndex}`}>
+                    <Badge key={tagIndex} variant="secondary" className="transition-all duration-300 group-hover:bg-academic-blue/20 group-hover:text-academic-blue" data-testid={`project-tag-${index}-${tagIndex}`}>
                       {tag}
                     </Badge>
                   ))}
                 </div>
-                <div className="flex items-center justify-between text-sm text-muted-foreground mb-4">
+                <div className="flex items-center justify-between text-sm text-muted-foreground mb-4 transition-all duration-300 group-hover:text-foreground">
                   <span data-testid={`project-timeline-${index}`}>{project.timeline}</span>
                   <span data-testid={`project-funding-${index}`}>Funding: {project.funding}</span>
                 </div>
-                <Button variant="outline" className="w-full" data-testid={`project-learn-more-${index}`}>
+                <Button variant="outline" className="w-full transition-all duration-300 group-hover:bg-academic-blue group-hover:text-white group-hover:border-academic-blue" data-testid={`project-learn-more-${index}`}>
                   Learn More →
                 </Button>
               </CardContent>

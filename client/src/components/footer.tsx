@@ -20,9 +20,9 @@ export default function Footer() {
 
   const socialLinks = [
     { icon: GraduationCap, href: "https://scholar.google.com/citations?user=NiXjAasAAAAJ&hl=en", label: "Google Scholar" },
-    { icon: Linkedin, href: "https://linkedin.com", label: "LinkedIn" },
-    { icon: ExternalLink, href: "#", label: "ResearchGate" },
-    { icon: Building, href: "#", label: "ORCID" },
+    { icon: Linkedin, href: "https://in.linkedin.com/in/vijaytoutam", label: "LinkedIn" },
+    { icon: ExternalLink, href: "https://www.researchgate.net/profile/Vijaykumar-Toutam", label: "ResearchGate" },
+    { icon: Building, href: "https://orcid.org/0000-0001-5415-2745", label: "ORCID" },
   ];
 
   const handleSmoothScroll = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {

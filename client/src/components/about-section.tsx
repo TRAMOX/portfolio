@@ -1,7 +1,26 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { Trophy, Medal, Star } from "lucide-react";
+import { Trophy, Medal, Star, Microscope, Cpu, Zap } from "lucide-react";
+import { motion } from "framer-motion";
 
 export default function AboutSection() {
+  const expertise = [
+    {
+      icon: Microscope,
+      title: "Additive Manufacturing",
+      description: "Advanced 3D printing technologies for electronics and functional materials"
+    },
+    {
+      icon: Cpu,
+      title: "3D Printed Electronics",
+      description: "Integration of electronic components through additive manufacturing processes"
+    },
+    {
+      icon: Zap,
+      title: "Optical Sensors & Energy Harvesters",
+      description: "Development of next-generation sensing and energy conversion devices"
+    }
+  ];
+
   const timelineItems = [
     {
       year: "2015 - Present",
@@ -58,8 +77,52 @@ export default function AboutSection() {
   ];
 
   return (
-    <section id="about" className="py-20 bg-muted/30">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="about" className="py-24 bg-background relative overflow-hidden">
+      {/* Background Elements */}
+      <div className="absolute inset-0">
+        <div className="absolute top-1/4 right-1/4 w-96 h-96 bg-academic-blue/3 rounded-full blur-3xl"></div>
+      </div>
+
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        {/* Expertise Section */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
+          className="text-center mb-20"
+        >
+          <h2 className="text-4xl lg:text-5xl font-bold text-foreground mb-6">
+            Research Expertise
+          </h2>
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto mb-16">
+            Pioneering innovations at the intersection of materials science and advanced manufacturing
+          </p>
+
+          <div className="grid md:grid-cols-3 gap-8">
+            {expertise.map((item, index) => {
+              const IconComponent = item.icon;
+              return (
+                <motion.div
+                  key={item.title}
+                  initial={{ opacity: 0, y: 30 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.6, delay: index * 0.2 }}
+                  viewport={{ once: true }}
+                  className="text-center group cursor-pointer"
+                  whileHover={{ scale: 1.05, y: -10 }}
+                >
+                  <div className="w-16 h-16 bg-academic-blue/10 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-academic-blue/30 group-hover:scale-110 transition-all duration-300 group-hover:shadow-lg">
+                    <IconComponent className="w-8 h-8 text-academic-blue group-hover:scale-125 group-hover:drop-shadow-lg transition-all duration-300" />
+                  </div>
+                  <h3 className="text-xl font-semibold mb-4 group-hover:text-academic-blue transition-colors duration-300">{item.title}</h3>
+                  <p className="text-muted-foreground leading-relaxed group-hover:text-foreground transition-colors duration-300">{item.description}</p>
+                </motion.div>
+              );
+            })}
+          </div>
+        </motion.div>
+
         <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold gradient-text mb-6" data-testid="about-heading">
             Biography
@@ -76,11 +139,11 @@ export default function AboutSection() {
               <h3 className="text-2xl font-bold mb-6" data-testid="education-heading">Academic Background</h3>
               <div className="space-y-6">
                 {education.map((item, index) => (
-                  <Card key={index} className="card-hover" data-testid={`education-${index}`}>
-                    <CardContent className="p-6">
-                      <h4 className="font-semibold text-lg text-academic-blue mb-2">{item.degree}</h4>
-                      <p className="text-muted-foreground mb-2">{item.institution} • {item.year}</p>
-                      <p className="text-sm">{item.description}</p>
+                  <Card key={index} className="card-hover group cursor-pointer overflow-hidden" data-testid={`education-${index}`}>
+                    <CardContent className="p-6 transition-all duration-300 group-hover:bg-academic-blue/5 group-hover:scale-105">
+                      <h4 className="font-semibold text-lg text-academic-blue mb-2 group-hover:scale-105 transition-transform duration-300">{item.degree}</h4>
+                      <p className="text-muted-foreground mb-2 group-hover:text-foreground transition-colors duration-300">{item.institution} • {item.year}</p>
+                      <p className="text-sm group-hover:text-foreground transition-colors duration-300">{item.description}</p>
                     </CardContent>
                   </Card>
                 ))}
@@ -93,11 +156,11 @@ export default function AboutSection() {
                 {awards.map((award, index) => {
                   const IconComponent = award.icon;
                   return (
-                    <div key={index} className="flex items-center space-x-4" data-testid={`award-${index}`}>
-                      <IconComponent className="text-academic-blue text-xl" />
+                    <div key={index} className="flex items-center space-x-4 p-3 rounded-lg hover:bg-academic-blue/5 transition-all duration-300 cursor-pointer group" data-testid={`award-${index}`}>
+                      <IconComponent className="text-academic-blue text-xl group-hover:scale-125 group-hover:drop-shadow-lg transition-all duration-300" />
                       <div>
-                        <p className="font-semibold">{award.name}</p>
-                        <p className="text-sm text-muted-foreground">{award.year}</p>
+                        <p className="font-semibold group-hover:text-academic-blue transition-colors duration-300">{award.name}</p>
+                        <p className="text-sm text-muted-foreground group-hover:text-foreground transition-colors duration-300">{award.year}</p>
                       </div>
                     </div>
                   );

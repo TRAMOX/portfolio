@@ -10,35 +10,35 @@ export default function MediaSection() {
 
   const mediaItems = [
     {
-      title: "Revolutionary 3D Printing Method Could Transform Electronics",
-      source: "Nature News",
-      date: "January 15, 2024",
+      title: "3D Printed ZnO-Polyurethane Composite Breakthrough for Optical Detectors",
+      source: "Sensors and Actuators A: Physical",
+      date: "March 2023",
       type: "Research Breakthrough",
-      description: "Dr. Chen's team at CSIR NPL has developed a groundbreaking multi-material 3D printing technique that enables the creation of fully functional electronic devices in a single print cycle...",
+      description: "Dr. Vijaykumar Toutam's team at CSIR NPL has developed innovative 3D printed ZnO-polyurethane acrylate resin composites for wide spectral photoresponse optical detectors, opening new possibilities for advanced sensing applications...",
       image: "https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=250",
     },
     {
-      title: "Next-Gen Batteries Using 3D Printed Electrodes Show Promise",
-      source: "IEEE Spectrum",
-      date: "December 8, 2023",
+      title: "Advancing Nanoelectronics Through Additive Manufacturing",
+      source: "IEEE Nanotechnology Magazine",
+      date: "January 2024",
       type: "Media Interview",
-      description: "Recent work by Principal Scientist Dr. Sarah Chen demonstrates how additive manufacturing can revolutionize energy storage with custom electrode architectures...",
+      description: "Principal Scientist Dr. Vijaykumar Toutam discusses how additive manufacturing is revolutionizing nanoelectronics fabrication, enabling precise control over material properties and device architectures...",
       image: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=250",
     },
     {
-      title: "Dr. Sarah Chen Awarded Prestigious Royal Society Fellowship",
+      title: "CSIR NPL Scientist Recognized for Excellence in 3D Printed Electronics",
       source: "CSIR NPL News",
-      date: "November 22, 2023",
+      date: "November 2023",
       type: "Award",
-      description: "The Royal Society has recognized Dr. Chen's outstanding contributions to materials science and additive manufacturing with a prestigious research fellowship...",
+      description: "Dr. Vijaykumar Toutam has been recognized for his outstanding contributions to 3D printed electronics and optical sensor development, with his work being cited extensively in the scientific community...",
       image: "https://images.unsplash.com/photo-1541339907198-e08756dedf3f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=250",
     },
     {
-      title: "Flexible Sensors Could Monitor Environmental Changes in Real-Time",
-      source: "Science Daily",
-      date: "October 5, 2023",
+      title: "Energy Harvesting Innovations Using 3D Printing Technology",
+      source: "Advanced Materials Today",
+      date: "September 2023",
       type: "Profile Feature",
-      description: "New flexible optical sensors developed by Dr. Chen's research group offer unprecedented sensitivity for environmental monitoring applications...",
+      description: "Dr. Toutam's pioneering work in energy harvesters using additive manufacturing techniques is creating new opportunities for sustainable electronics and self-powered sensor systems...",
       image: "https://images.unsplash.com/photo-1581092795360-fd1ca04f0952?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=250",
     },
   ];
@@ -74,37 +74,40 @@ export default function MediaSection() {
 
         <div className="grid lg:grid-cols-2 gap-8 mb-16">
           {mediaItems.map((item, index) => (
-            <Card key={index} className="overflow-hidden card-hover" data-testid={`media-item-${index}`}>
-              <img
-                src={item.image}
-                alt={item.title}
-                className="w-full h-48 object-cover"
-                data-testid={`media-image-${index}`}
-              />
-              <CardContent className="p-6">
+            <Card key={index} className="overflow-hidden card-hover group cursor-pointer" data-testid={`media-item-${index}`}>
+              <div className="relative overflow-hidden">
+                <img
+                  src={item.image}
+                  alt={item.title}
+                  className="w-full h-48 object-cover transition-all duration-500 group-hover:scale-110 group-hover:brightness-110"
+                  data-testid={`media-image-${index}`}
+                />
+                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-all duration-300"></div>
+              </div>
+              <CardContent className="p-6 group-hover:bg-academic-blue/5 transition-all duration-300">
                 <div className="flex items-center justify-between mb-3">
-                  <Badge className={getTypeColor(item.type)} data-testid={`media-type-${index}`}>
+                  <Badge className={`${getTypeColor(item.type)} group-hover:scale-105 transition-transform duration-300`} data-testid={`media-type-${index}`}>
                     {item.type}
                   </Badge>
-                  <time className="text-sm text-muted-foreground" data-testid={`media-date-${index}`}>
+                  <time className="text-sm text-muted-foreground group-hover:text-foreground transition-colors duration-300" data-testid={`media-date-${index}`}>
                     {item.date}
                   </time>
                 </div>
-                <h3 className="font-bold text-xl mb-3 hover:text-academic-blue transition-colors duration-200" data-testid={`media-title-${index}`}>
+                <h3 className="font-bold text-xl mb-3 hover:text-academic-blue transition-colors duration-200 group-hover:text-academic-blue" data-testid={`media-title-${index}`}>
                   <a href="#" className="hover:underline">
                     {item.title}
                   </a>
                 </h3>
-                <p className="text-muted-foreground mb-4" data-testid={`media-description-${index}`}>
+                <p className="text-muted-foreground mb-4 group-hover:text-foreground transition-colors duration-300" data-testid={`media-description-${index}`}>
                   {item.description}
                 </p>
                 <div className="flex items-center justify-between">
-                  <span className="text-sm font-medium text-academic-blue" data-testid={`media-source-${index}`}>
+                  <span className="text-sm font-medium text-academic-blue group-hover:scale-105 transition-transform duration-300" data-testid={`media-source-${index}`}>
                     {item.source}
                   </span>
-                  <Button variant="ghost" size="sm" data-testid={`media-read-more-${index}`}>
+                  <Button variant="ghost" size="sm" className="group-hover:bg-academic-blue group-hover:text-white transition-all duration-300" data-testid={`media-read-more-${index}`}>
                     Read More
-                    <ExternalLink className="w-4 h-4 ml-1" />
+                    <ExternalLink className="w-4 h-4 ml-1 group-hover:scale-110 transition-transform duration-300" />
                   </Button>
                 </div>
               </CardContent>

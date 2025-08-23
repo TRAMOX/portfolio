@@ -6,19 +6,19 @@ import { Calendar, MapPin, Users, ExternalLink } from "lucide-react";
 export default function TalksSection() {
   const upcomingTalks = [
     {
-      title: "Keynote: Future of Additive Manufacturing",
-      event: "International Conference on Advanced Materials (ICAM 2024)",
-      date: "March 15-18, 2024",
-      location: "Singapore",
+      title: "Keynote: 3D Printed Electronics - From Lab to Industry",
+      event: "International Conference on Additive Manufacturing (ICAM 2024)",
+      date: "June 15-18, 2024",
+      location: "New Delhi, India",
       type: "Keynote",
-      attendees: "2,000+ attendees",
+      attendees: "1,500+ attendees",
       status: "upcoming",
     },
     {
-      title: "3D Electronics Workshop",
-      event: "IEEE Advanced Manufacturing Conference",
-      date: "April 22, 2024",
-      location: "Boston, USA",
+      title: "Advanced Optical Sensors Workshop",
+      event: "IEEE Sensors Conference",
+      date: "September 10, 2024",
+      location: "Kobe, Japan",
       type: "Workshop",
       attendees: "Workshop organizer",
       status: "upcoming",
@@ -27,43 +27,43 @@ export default function TalksSection() {
 
   const recentTalks = [
     {
-      title: "Advanced Materials for Sustainable Electronics",
-      event: "Materials Research Society Fall Meeting",
-      date: "December 2023",
-      location: "Boston, USA",
+      title: "ZnO-Polyurethane Composites for Wide Spectral Photodetectors",
+      event: "International Conference on Sensors and Actuators",
+      date: "March 2023",
+      location: "Mumbai, India",
       type: "Invited Talk",
     },
     {
-      title: "Innovation in 3D Printed Sensors",
-      event: "European Materials Research Society",
-      date: "September 2023",
-      location: "Warsaw, Poland",
+      title: "Innovations in 3D Printed Nanoelectronics",
+      event: "IEEE Nanotechnology Conference",
+      date: "November 2023",
+      location: "Singapore",
       type: "Plenary",
     },
     {
-      title: "Energy Storage Revolution",
-      event: "International Battery Association Conference",
-      date: "June 2023",
-      location: "Tokyo, Japan",
+      title: "Energy Harvesting Through Additive Manufacturing",
+      event: "International Energy Materials Conference",
+      date: "August 2023",
+      location: "Bangalore, India",
       type: "Keynote",
     },
     {
-      title: "The Future We Can Print",
-      event: "TEDx Cambridge",
-      date: "October 2022",
-      location: "Cambridge, UK",
-      type: "TEDx Talk",
-      special: "500K+ views",
+      title: "The Future of Printed Electronics",
+      event: "CSIR NPL Technology Symposium",
+      date: "February 2023",
+      location: "New Delhi, India",
+      type: "Keynote",
+      special: "Featured Speaker",
     },
   ];
 
   const speakingTopics = [
-    "Additive Manufacturing",
-    "Smart Materials", 
-    "Sustainable Manufacturing",
-    "Digital Fabrication",
-    "Materials Innovation",
-    "Future of Manufacturing",
+    "3D Printed Electronics",
+    "Optical Sensors & Photodetectors", 
+    "Energy Harvesting Systems",
+    "Nanoelectronics Manufacturing",
+    "Additive Manufacturing Innovations",
+    "Advanced Materials for Electronics",
   ];
 
   return (
@@ -87,42 +87,42 @@ export default function TalksSection() {
             {upcomingTalks.map((talk, index) => (
               <Card 
                 key={index} 
-                className={`border-l-4 ${talk.type === 'Keynote' ? 'border-l-academic-blue' : 'border-l-green-500'}`}
+                className={`border-l-4 ${talk.type === 'Keynote' ? 'border-l-academic-blue' : 'border-l-green-500'} group cursor-pointer overflow-hidden hover:shadow-lg transition-all duration-300`}
                 data-testid={`upcoming-talk-${index}`}
               >
-                <CardContent className="p-6">
+                <CardContent className="p-6 group-hover:bg-academic-blue/5 group-hover:scale-105 transition-all duration-300">
                   <div className="flex items-start justify-between mb-4">
                     <div>
-                      <h4 className="font-semibold text-lg" data-testid={`upcoming-talk-title-${index}`}>
+                      <h4 className="font-semibold text-lg group-hover:text-academic-blue transition-colors duration-300" data-testid={`upcoming-talk-title-${index}`}>
                         {talk.title}
                       </h4>
-                      <p className="text-muted-foreground" data-testid={`upcoming-talk-event-${index}`}>
+                      <p className="text-muted-foreground group-hover:text-foreground transition-colors duration-300" data-testid={`upcoming-talk-event-${index}`}>
                         {talk.event}
                       </p>
                     </div>
                     <Badge 
-                      className={talk.type === 'Keynote' ? 'bg-academic-blue' : 'bg-green-500'}
+                      className={`${talk.type === 'Keynote' ? 'bg-academic-blue' : 'bg-green-500'} group-hover:scale-110 transition-transform duration-300`}
                       data-testid={`upcoming-talk-type-${index}`}
                     >
                       {talk.type}
                     </Badge>
                   </div>
-                  <div className="flex flex-wrap gap-4 text-sm text-muted-foreground mb-4">
+                  <div className="flex flex-wrap gap-4 text-sm text-muted-foreground mb-4 group-hover:text-foreground transition-colors duration-300">
                     <span className="flex items-center" data-testid={`upcoming-talk-date-${index}`}>
-                      <Calendar className="w-4 h-4 mr-1" />
+                      <Calendar className="w-4 h-4 mr-1 group-hover:scale-110 transition-transform duration-300" />
                       {talk.date}
                     </span>
                     <span className="flex items-center" data-testid={`upcoming-talk-location-${index}`}>
-                      <MapPin className="w-4 h-4 mr-1" />
+                      <MapPin className="w-4 h-4 mr-1 group-hover:scale-110 transition-transform duration-300" />
                       {talk.location}
                     </span>
                     <span className="flex items-center" data-testid={`upcoming-talk-attendees-${index}`}>
-                      <Users className="w-4 h-4 mr-1" />
+                      <Users className="w-4 h-4 mr-1 group-hover:scale-110 transition-transform duration-300" />
                       {talk.attendees}
                     </span>
                   </div>
-                  <p className="text-sm text-foreground" data-testid={`upcoming-talk-description-${index}`}>
-                    Exploring the convergence of materials science and manufacturing technologies for next-generation applications.
+                  <p className="text-sm text-foreground group-hover:text-academic-blue transition-colors duration-300" data-testid={`upcoming-talk-description-${index}`}>
+                    Exploring cutting-edge research in 3D printed electronics, optical sensors, and energy harvesting systems for next-generation applications.
                   </p>
                 </CardContent>
               </Card>
@@ -143,25 +143,25 @@ export default function TalksSection() {
               {recentTalks.map((talk, index) => (
                 <div key={index} className="lg:flex lg:items-center lg:space-x-8" data-testid={`recent-talk-${index}`}>
                   <div className={`lg:w-1/2 ${index % 2 === 0 ? 'lg:text-right lg:pr-8' : 'lg:order-2 lg:pl-8'}`}>
-                    <Card className="shadow-md">
-                      <CardContent className="p-6">
-                        <h4 className="font-semibold text-lg mb-2" data-testid={`recent-talk-title-${index}`}>
+                    <Card className="shadow-md group cursor-pointer overflow-hidden hover:shadow-lg transition-all duration-300">
+                      <CardContent className="p-6 group-hover:bg-academic-blue/5 group-hover:scale-105 transition-all duration-300">
+                        <h4 className="font-semibold text-lg mb-2 group-hover:text-academic-blue transition-colors duration-300" data-testid={`recent-talk-title-${index}`}>
                           {talk.title}
                         </h4>
-                        <p className="text-muted-foreground mb-2" data-testid={`recent-talk-event-${index}`}>
+                        <p className="text-muted-foreground mb-2 group-hover:text-foreground transition-colors duration-300" data-testid={`recent-talk-event-${index}`}>
                           {talk.event}
                         </p>
-                        <div className="flex flex-wrap gap-2 text-sm text-muted-foreground mb-2">
+                        <div className="flex flex-wrap gap-2 text-sm text-muted-foreground mb-2 group-hover:text-foreground transition-colors duration-300">
                           <span data-testid={`recent-talk-date-${index}`}>{talk.date}</span>
                           <span>•</span>
                           <span data-testid={`recent-talk-location-${index}`}>{talk.location}</span>
                         </div>
                         <div className="flex items-center gap-2">
-                          <Badge variant="outline" data-testid={`recent-talk-type-${index}`}>
+                          <Badge variant="outline" className="group-hover:bg-academic-blue/20 group-hover:text-academic-blue transition-all duration-300" data-testid={`recent-talk-type-${index}`}>
                             {talk.type}
                           </Badge>
                           {talk.special && (
-                            <Badge variant="secondary" data-testid={`recent-talk-special-${index}`}>
+                            <Badge variant="secondary" className="group-hover:bg-academic-blue/20 group-hover:text-academic-blue transition-all duration-300" data-testid={`recent-talk-special-${index}`}>
                               {talk.special}
                             </Badge>
                           )}
