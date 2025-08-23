@@ -7,10 +7,9 @@ export default defineConfig({
   base: "/PORTZX0/",
   resolve: {
     alias: {
-      "@": path.resolve("./client/src"),
+      "@": path.resolve(__dirname, "src"),
     },
   },
-  root: "./client",
   build: {
     outDir: "../dist",
     emptyOutDir: true,
