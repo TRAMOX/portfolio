@@ -1,0 +1,90 @@
+Build a modern, responsive academic portfolio website inspired by the design and animations of https://www.carlgordonmedia.com/
+.
+
+Framework & Tools
+
+Next.js (React-based)
+
+Tailwind CSS for clean styling
+
+Framer Motion for smooth scroll/section animations
+
+SEO-ready with meta tags for scholar.google, LinkedIn, institutional pages
+
+Optimized for desktop + mobile
+
+Sections & Content
+
+Homepage / Introduction
+
+Fullscreen hero section with a professional portrait, warm welcome text.
+
+Eye-catching headline showcasing expertise (e.g., Principal Scientist, CSIR NPL | Additive Manufacturing, 3D Printed Electronics, Optical Sensors, Energy Storage).
+
+Quick links to LinkedIn and institutional profiles.
+
+Biography / About
+
+Academic background: institutions, degrees, career timeline.
+
+Awards, recognitions, key positions held.
+
+Research & Projects
+
+Major research themes: additive manufacturing, 3D printing, advanced materials, electronics, sensors.
+
+Grid/slider layout for featured projects with images + descriptions.
+
+Highlight outcomes in labs, industry, or society.
+
+Publications & Patents
+
+Auto-fetch or manually import Google Scholar publications.
+
+List patents, significant innovations, and downloadable PDFs.
+
+Talks & Conferences
+
+Invited talks, workshops, conferences attended.
+
+Timeline or card-style layout.
+
+Team & Collaborations
+
+Short profiles/photos of students & collaborators.
+
+National & international research partnerships.
+
+Media & News
+
+News coverage, interviews, university/CSIR-NPL announcements.
+
+Blog-like feed with images + publication dates.
+
+Contact & Booking
+
+Academic query form (name, email, message).
+
+Email & direct links: Google Scholar, LinkedIn, CSIR NPL IRINS profile.
+
+Design Guidelines
+
+Minimalist white-space-rich layout.
+
+Sticky top navigation bar with smooth scrolling.
+
+Bold typography (similar to Helvetica Neue or Inter).
+
+Portrait image styled professionally (circle or subtle framed).
+
+Light & dark mode toggle.
+
+Output
+
+Fully functional Next.js + Tailwind project.
+
+Organized components (/components, /pages, /styles, /data).
+
+Placeholder content for projects, publications, and team members.
+
+Deployment-ready for Vercel/Netlify.
