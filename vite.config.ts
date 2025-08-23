@@ -4,7 +4,7 @@ import path from "path";
 
 export default defineConfig({
   plugins: [react()],
-  base: "/PORTZX0/",
+  base: "/xrtmvi/",
   resolve: {
     alias: {
       "@": path.resolve("./client/src"),
