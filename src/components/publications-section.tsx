@@ -1,7 +1,5 @@
-import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Badge } from "@/components/ui/badge";
-import { ExternalLink, FileText, Award, TrendingUp, Users, Calendar, Zap, Microscope, Cpu, Eye, BookOpen, GraduationCap } from "lucide-react";
+import { ExternalLink, FileText, Award, TrendingUp, Users, Calendar, Zap, Microscope, Cpu, Eye } from "lucide-react";
 import { motion } from "framer-motion";
 
 export default function PublicationsSection() {
@@ -28,12 +26,6 @@ export default function PublicationsSection() {
     }
   };
 
-  const statistics = [
-    { value: "35+", label: "Publications", icon: BookOpen },
-    { value: "500+", label: "Citations", icon: Award },
-    { value: "15", label: "h-index", icon: GraduationCap },
-    { value: "18", label: "i10-index", icon: FileText },
-  ];
 
   const recentPublications = [
     {
@@ -78,22 +70,6 @@ export default function PublicationsSection() {
     }
   ];
 
-  const patents = [
-    {
-      title: "Multi-Material 3D Printing System",
-      patentNo: "US11,234,567 B2",
-      filed: "2023",
-      granted: "2024",
-      description: "System and method for simultaneous printing of multiple materials with varying properties for electronic device fabrication.",
-    },
-    {
-      title: "Flexible Optical Sensor Array",
-      patentNo: "US11,345,678 B2",
-      filed: "2022",
-      granted: "2023",
-      description: "Bendable sensor array for environmental monitoring with enhanced sensitivity and durability.",
-    },
-  ];
 
   return (
     <section id="publications" className="py-20 bg-muted/30">
@@ -133,7 +109,7 @@ export default function PublicationsSection() {
             { label: "Citations", value: "498", icon: TrendingUp, color: "text-purple-400" },
             { label: "Reads", value: "6,896", icon: Award, color: "text-green-400" },
             { label: "Research Areas", value: "4+", icon: Users, color: "text-orange-400" }
-          ].map((stat, index) => {
+          ].map((stat) => {
             const Icon = stat.icon;
             return (
               <motion.div
@@ -166,7 +142,7 @@ export default function PublicationsSection() {
             Featured Research
           </motion.h3>
           <div className="grid md:grid-cols-2 gap-8">
-            {recentPublications.map((pub, index) => {
+            {recentPublications.map((pub) => {
               const Icon = pub.icon;
               return (
                 <motion.div
@@ -178,12 +154,18 @@ export default function PublicationsSection() {
                 >
                   <div className="bg-card rounded-xl border shadow-sm hover:shadow-md transition-all duration-300 overflow-hidden">
                     {/* Research Thumbnail */}
-                    <div className={`h-32 bg-gradient-to-r ${pub.color} relative overflow-hidden`}>
-                      <img 
-                        src={pub.image} 
-                        alt={pub.title}
-                        className="w-full h-full object-cover opacity-80"
-                      />
+                    <div className={`h-32 bg-gradient-to-r ${pub.color} relative overflow-hidden flex items-center justify-center`}>
+                      {pub.image ? (
+                        <img 
+                          src={pub.image} 
+                          alt={pub.title}
+                          className="w-full h-full object-cover opacity-80"
+                        />
+                      ) : (
+                        <div className="text-white/80">
+                          <Icon className="w-12 h-12" />
+                        </div>
+                      )}
                       <div className="absolute top-4 right-4">
                         <div className="w-10 h-10 bg-white/20 backdrop-blur-sm rounded-lg flex items-center justify-center">
                           <Icon className="w-5 h-5 text-white" />

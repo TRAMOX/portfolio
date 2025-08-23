@@ -4,7 +4,7 @@ import path from "path";
 
 export default defineConfig({
   plugins: [react()],
-  base: "/xrtmvi/",
+  base: "/portfolio/", // GitHub repository name
   resolve: {
     alias: {
       "@": path.resolve("./src"),
@@ -13,5 +13,10 @@ export default defineConfig({
   build: {
     outDir: "./dist",
     emptyOutDir: true,
+    sourcemap: false,
+  },
+  preview: {
+    port: 4173,
+    host: true,
   },
 });

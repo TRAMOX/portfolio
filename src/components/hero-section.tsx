@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { GraduationCap, Linkedin, Building, ArrowDown, Mail, ExternalLink, Award, Users, BookOpen, Zap } from "lucide-react";
+import { GraduationCap, Building, ArrowDown, Mail, ExternalLink, Award, BookOpen, Zap } from "lucide-react";
 import { motion } from "framer-motion";
 
 export default function HeroSection() {
