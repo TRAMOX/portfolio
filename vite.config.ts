@@ -2,9 +2,9 @@ import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 import path from "path";
 
-export default defineConfig({
+export default defineConfig(({ command }) => ({
   plugins: [react()],
-  base: "/portfolio/", // GitHub repository name
+  base: command === 'build' ? "/portfolio/" : "/", // Only use /portfolio/ for production builds
   resolve: {
     alias: {
       "@": path.resolve("./src"),
@@ -19,4 +19,4 @@ export default defineConfig({
     port: 4173,
     host: true,
   },
-});
+}));
