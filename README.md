@@ -2,11 +2,11 @@
 
 A modern, responsive portfolio website showcasing research, publications, and professional achievements of Dr. Vijaykumar Toutam, Principal Scientist at CSIR National Physical Laboratory.
 
-## 🚀 Live Demo
+##  Live Demo
 
 [View Live Portfolio](https://TRAMOX.github.io/portfolio)
 
-## ✨ Features
+##  Features
 
 - **Modern Design**: Clean, professional interface with smooth animations
 - **Responsive Layout**: Optimized for all devices and screen sizes
@@ -16,7 +16,7 @@ A modern, responsive portfolio website showcasing research, publications, and pr
 - **Contact Form**: Professional contact form with validation
 - **Performance Optimized**: Fast loading with modern web technologies
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 - **Frontend**: React 18 + TypeScript
 - **Styling**: Tailwind CSS + CSS Variables
@@ -26,7 +26,7 @@ A modern, responsive portfolio website showcasing research, publications, and pr
 - **State Management**: React Query + React Hooks
 - **UI Components**: Radix UI + Custom Components
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 PortfolioFlow/
@@ -74,7 +74,7 @@ PortfolioFlow/
 4. **Open your browser**
    Navigate to `http://localhost:5173`
 
-## 📦 Available Scripts
+##  Available Scripts
 
 - `npm run dev` - Start development server
 - `npm run build` - Build for production
@@ -82,7 +82,7 @@ PortfolioFlow/
 - `npm run deploy` - Deploy to GitHub Pages
 - `npm run type-check` - Run TypeScript type checking
 
-## 🌐 Deployment
+## Deployment
 
 ### GitHub Pages
 
@@ -132,21 +132,21 @@ Modify `tailwind.config.js` for:
 - Animation keyframes
 - Extended utilities
 
-## 📱 Responsive Design
+##  Responsive Design
 
 The portfolio is fully responsive with breakpoints:
 - **Mobile**: < 768px
 - **Tablet**: 768px - 1024px
 - **Desktop**: > 1024px
 
-## 🔧 Configuration Files
+##  Configuration Files
 
 - **Vite**: `vite.config.ts` - Build and development settings
 - **Tailwind**: `tailwind.config.js` - CSS framework configuration
 - **TypeScript**: `tsconfig.json` - Type checking and compilation
 - **PostCSS**: `postcss.config.js` - CSS processing
 
-## 🤝 Contributing
+##  Contributing
 
 1. Fork the repository
 2. Create a feature branch (`git checkout -b feature/amazing-feature`)
@@ -154,11 +154,11 @@ The portfolio is fully responsive with breakpoints:
 4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
 
-## 📄 License
+##  License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 👨‍💼 About
+##  About
 
 **Dr. Vijaykumar Toutam** is a Principal Scientist at CSIR National Physical Laboratory, specializing in:
 - Additive Manufacturing
@@ -166,7 +166,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - Optical Sensors
 - Energy Harvesters
 
-## 📞 Contact
+##  Contact
 
 - **Email**: [Contact through form](https://TRAMOX.github.io/portfolio#contact)
 - **LinkedIn**: [Vijaykumar Toutam](https://in.linkedin.com/in/vijaytoutam)
