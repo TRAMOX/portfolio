@@ -166,13 +166,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - Optical Sensors
 - Energy Harvesters
 
-##  Contact
-
-- **Email**: [Contact through form](https://TRAMOX.github.io/portfolio#contact)
-- **LinkedIn**: [Vijaykumar Toutam](https://in.linkedin.com/in/vijaytoutam)
-- **Google Scholar**: [Research Profile](https://scholar.google.com/citations?user=NiXjAasAAAAJ&hl=en)
-- **ORCID**: [0000-0001-5415-2745](https://orcid.org/0000-0001-5415-2745)
-
 ---
 
 ⭐ **Star this repository if you find it helpful!**
