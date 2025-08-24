@@ -2,9 +2,9 @@ import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 import path from "path";
 
-export default defineConfig(({ command }) => ({
+export default defineConfig({
   plugins: [react()],
-  base: command === 'build' ? "/portfolio/" : "/", // Only use /portfolio/ for production builds
+  base: "/", // Use root path for Vercel deployment
   resolve: {
     alias: {
       "@": path.resolve("./src"),
@@ -19,4 +19,4 @@ export default defineConfig(({ command }) => ({
     port: 4173,
     host: true,
   },
-}));
+});
